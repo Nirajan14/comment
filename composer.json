@@ -1,6 +1,9 @@
 {
     "name": "nirajan/comment",
+    "description": "A Laravel package for handling comments",
     "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Nirajan\\Comment\\": "src/"
@@ -22,5 +25,14 @@
             ]
         }
     },
-    "require": {}
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "orchestra/testbench": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

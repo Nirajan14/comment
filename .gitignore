@@ -1,0 +1,53 @@
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# Node dependencies
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log
+
+# Laravel specific
+/.idea/
+/Homestead.yaml
+/.vagrant/
+/.env
+.env.*.backup
+.phpunit.result.cache
+/storage/
+public/storage/
+
+# Cache & logs
+/bootstrap/cache/*
+!bootstrap/cache/.gitignore
+/storage/logs/*.log
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+*.vscode/
+.idea/
+
+# PHPUnit coverage / test output
+/build/
+.phpunit.result.cache
+
+# Laravel Mix / Vite / Assets
+/public/hot
+/public/css
+/public/js
+/public/mix-manifest.json
+/public/build/
+
+# Package specific
+/.php_cs.cache
+/.phpunit.cache

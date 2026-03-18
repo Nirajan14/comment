@@ -1,0 +1,26 @@
+{
+    "name": "nirajan/comment",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Nirajan\\Comment\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Nirajan Chaudhary",
+            "email": "nirajanch011@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nirajan\\Comment\\CommentServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}

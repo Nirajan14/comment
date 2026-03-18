@@ -9,10 +9,12 @@ class CommentController extends Controller
 {
     public function store(StoreCommentRequest $request)
     {
-        // if (!$this->verifyRecaptcha($request->input('g-recaptcha-response'))) {
-        //     return back()->withErrors(['captcha' => 'Captcha failed']);
-        // }
-        
+        if(config('comment.recaptcha_enabled', false)) {
+            if (!$this->verifyRecaptcha($request->input('g-recaptcha-response'))) {
+                return back()->withErrors(['captcha' => 'Captcha failed']);
+            }
+        }
+
         $data = $request->validated();
         Comment::create([
             'name' => $request->input('name'),
